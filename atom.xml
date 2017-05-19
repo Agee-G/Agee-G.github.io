@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-19T10:48:46.000Z</updated>
+  <updated>2017-05-19T10:48:22.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,20 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>hexo d test</title>
-    <link href="http://yoursite.com/2017/05/19/hexo-d-test/"/>
-    <id>http://yoursite.com/2017/05/19/hexo-d-test/</id>
-    <published>2017-05-19T10:48:46.000Z</published>
-    <updated>2017-05-19T10:48:46.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>hexo d错误问题</title>
@@ -51,41 +37,19 @@
   </entry>
   
   <entry>
-    <title>kule</title>
-    <link href="http://yoursite.com/2017/05/18/kule/"/>
-    <id>http://yoursite.com/2017/05/18/kule/</id>
-    <published>2017-05-17T16:22:15.000Z</published>
-    <updated>2017-05-17T16:22:15.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>HelloWorld</title>
     <link href="http://yoursite.com/2017/05/17/HelloWorld/"/>
     <id>http://yoursite.com/2017/05/17/HelloWorld/</id>
     <published>2017-05-17T12:12:47.000Z</published>
-    <updated>2017-05-17T12:12:47.000Z</updated>
+    <updated>2017-05-19T10:54:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hello World<br>这是使用键入hexo的第一个blog</p>
+]]></content>
     
     <summary type="html">
     
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test_my_site</title>
-    <link href="http://yoursite.com/2017/05/17/test-my-site/"/>
-    <id>http://yoursite.com/2017/05/17/test-my-site/</id>
-    <published>2017-05-17T11:09:20.000Z</published>
-    <updated>2017-05-17T11:09:20.000Z</updated>
-    
-    <summary type="html">
+      &lt;p&gt;Hello World&lt;br&gt;这是使用键入hexo的第一个blog&lt;/p&gt;
+
     
     </summary>
     
