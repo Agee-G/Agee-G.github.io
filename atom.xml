@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-17T16:22:15.000Z</updated>
+  <updated>2017-05-19T10:48:46.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo d test</title>
+    <link href="http://yoursite.com/2017/05/19/hexo-d-test/"/>
+    <id>http://yoursite.com/2017/05/19/hexo-d-test/</id>
+    <published>2017-05-19T10:48:46.000Z</published>
+    <updated>2017-05-19T10:48:46.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo d错误问题</title>
+    <link href="http://yoursite.com/2017/05/19/hexo-d%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2017/05/19/hexo-d错误问题/</id>
+    <published>2017-05-19T10:33:01.000Z</published>
+    <updated>2017-05-19T10:48:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>当hexo d时会出现这种问题<br>Error: Module version mismatch. Expected 48, got 46.<br>    at Error (native)<br>    at Object.Module._extensions..node (module.js:597:18)<br>    at Module.load (module.js:487:32)<br>    at tryModuleLoad (module.js:446:12)<br>    at Function.Module._load (module.js:438:3)<br>    at Module.require (module.js:497:17)<br>    at require (internal/module.js:20:19)<br>    at Object.<anonymous> (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/bunyan/node_modules/dtrace-provider/dtrace-provider.js:17:23)<br>    at Module._compile (module.js:570:32)<br>    at Object.Module._extensions..js (module.js:579:10)<br>    at Module.load (module.js:487:32)<br>    at tryModuleLoad (module.js:446:12)<br>    at Function.Module._load (module.js:438:3)<br>    at Module.require (module.js:497:17)<br>    at require (internal/module.js:20:19)<br>    at Object.<anonymous> (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/bunyan/lib/bunyan.js:34:22)<br>    at Module._compile (module.js:570:32)<br>    at Object.Module._extensions..js (module.js:579:10)<br>    at Module.load (module.js:487:32)<br>    at tryModuleLoad (module.js:446:12)<br>    at Function.Module._load (module.js:438:3)<br>    at Module.require (module.js:497:17)<br>    at require (internal/module.js:20:19)<br>    at Object.<anonymous> (/Users/plusend/Documents/Blog/node_modules/hexo/lib/hexo/create_logger.js:3:14)<br>    at Module._compile (module.js:570:32)<br>    at Object.Module._extensions..js (module.js:579:10)<br>    at Module.load (module.js:487:32)<br>    at tryModuleLoad (module.js:446:12)<br>{ Error: Cannot find module ‘./build/default/DTraceProviderBindings’<br>    at Function.Module._resolveFilename (module.js:469:15)<br>    at Function.Module._load (module.js:417:25)<br>    at Module.require (module.js:497:17)<br>    at require (internal/module.js:20:19)<br>    at Object.<anonymous> (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/bunyan/node_modules/dtrace-provider/dtrace-provider.js:17:23)<br>    at Module._compile (module.js:570:32)<br>    at Object.Module._extensions..js (module.js:579:10)<br>    at Module.load (module.js:487:32)<br>    at tryModuleLoad (module.js:446:12)<br>    at Function.Module._load (module.js:438:3)<br>    at Module.require (module.js:497:17)<br>    at require (internal/module.js:20:19)<br>    at Object.<anonymous> (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/bunyan/lib/bunyan.js:34:22)<br>    at Module._compile (module.js:570:32)<br>    at Object.Module._extensions..js (module.js:579:10)<br>    at Module.load (module.js:487:32)<br>    at tryModuleLoad (module.js:446:12)<br>    at Function.Module._load (module.js:438:3)<br>    at Module.require (module.js:497:17)<br>    at require (internal/module.js:20:19)<br>    at Object.<anonymous> (/Users/plusend/Documents/Blog/node_modules/hexo/lib/hexo/create_logger.js:3:14)<br>    at Module._compile (module.js:570:32)<br>    at Object.Module._extensions..js (module.js:579:10)<br>    at Module.load (module.js:487:32)<br>    at tryModuleLoad (module.js:446:12)<br>    at Function.Module._load (module.js:438:3)<br>    at Module.require (module.js:497:17)<br>    at require (internal/module.js:20:19) code: ‘MODULE_NOT_FOUND’ }<br>{ Error: Cannot find module ‘./build/Debug/DTraceProviderBindings’<br>    at Function.Module._resolveFilename (module.js:469:15)<br>    at Function.Module._load (module.js:417:25)<br>    at Module.require (module.js:497:17)<br>    at require (internal/module.js:20:19)<br>    at Object.<anonymous> (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/bunyan/node_modules/dtrace-provider/dtrace-provider.js:17:23)<br>    at Module._compile (module.js:570:32)<br>    at Object.Module._extensions..js (module.js:579:10)<br>    at Module.load (module.js:487:32)<br>    at tryModuleLoad (module.js:446:12)<br>    at Function.Module._load (module.js:438:3)<br>    at Module.require (module.js:497:17)<br>    at require (internal/module.js:20:19)<br>    at Object.<anonymous> (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/bunyan/lib/bunyan.js:34:22)<br>    at Module._compile (module.js:570:32)<br>    at Object.Module._extensions..js (module.js:579:10)<br>    at Module.load (module.js:487:32)<br>    at tryModuleLoad (module.js:446:12)<br>    at Function.Module._load (module.js:438:3)<br>    at Module.require (module.js:497:17)<br>    at require (internal/module.js:20:19)<br>    at Object.<anonymous> (/Users/plusend/Documents/Blog/node_modules/hexo/lib/hexo/create_logger.js:3:14)<br>    at Module._compile (module.js:570:32)<br>    at Object.Module._extensions..js (module.js:579:10)<br>    at Module.load (module.js:487:32)<br>    at tryModuleLoad (module.js:446:12)<br>    at Function.Module._load (module.js:438:3)<br>    at Module.require (module.js:497:17)<br>    at require (internal/module.js:20:19) code: ‘MODULE_NOT_FOUND’ }<br>ERROR Plugin load failed: hexo-renderer-sass<br>Error: The <code>libsass</code> binding was not found in /Users/plusend/Documents/Blog/node_modules/hexo-renderer-sass/node_modules/node-sass/vendor/darwin-x64-48/binding.node<br>This usually happens because your node version has changed.<br>Run <code>npm rebuild node-sass</code> to build the binding for your current node version.<br>    at Object.sass.getBinaryPath (/Users/plusend/Documents/Blog/node_modules/hexo-renderer-sass/node_modules/node-sass/lib/extensions.js:158:11)<br>    at Object.<anonymous> (/Users/plusend/Documents/Blog/node_modules/hexo-renderer-sass/node_modules/node-sass/lib/index.js:16:36)<br>    at Module._compile (module.js:570:32)<br>    at Object.Module._extensions..js (module.js:579:10)<br>    at Module.load (module.js:487:32)<br>    at tryModuleLoad (module.js:446:12)<br>    at Function.Module._load (module.js:438:3)<br>    at Module.require (module.js:497:17)<br>    at require (/Users/plusend/Documents/Blog/node_modules/hexo/lib/hexo/index.js:213:21)<br>    at /Users/plusend/Documents/Blog/node_modules/hexo-renderer-sass/index.js:1:79<br>    at /Users/plusend/Documents/Blog/node_modules/hexo/lib/hexo/index.js:229:12<br>    at tryCatcher (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/util.js:11:23)<br>    at Promise._settlePromiseFromHandler (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/promise.js:489:31)<br>    at Promise._settlePromise (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/promise.js:546:18)<br>    at Promise._settlePromise0 (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/promise.js:591:10)<br>    at Promise._settlePromises (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/promise.js:674:18)<br>    at Promise._fulfill (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/promise.js:615:18)<br>    at Promise._resolveCallback (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/promise.js:416:57)<br>    at Promise._settlePromiseFromHandler (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/promise.js:502:17)<br>    at Promise._settlePromise (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/promise.js:546:18)<br>    at Promise._settlePromise0 (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/promise.js:591:10)<br>    at Promise._settlePromises (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/promise.js:674:18)<br>    at Promise._fulfill (/Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/promise.js:615:18)<br>    at /Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/bluebird/js/release/nodeback.js:42:21<br>    at /Users/plusend/Documents/Blog/node_modules/hexo/node_modules/hexo-fs/node_modules/graceful-fs/graceful-fs.js:76:16<br>    at tryToString (fs.js:455:3)<br>    at FSReqWrap.readFileAfterClose <a href="fs.js:442:12" target="_blank" rel="external">as oncomplete</a><br>    解决的方法就是：rm -rf node_modules &amp;&amp; npm install<br>另：该命令需要科学上网</anonymous></anonymous></anonymous></anonymous></anonymous></anonymous></anonymous></anonymous></anonymous></anonymous></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;当hexo d时会出现这种问题&lt;br&gt;Error: Module version mismatch. Expected 48, got 46.&lt;br&gt;    at Error (native)&lt;br&gt;    at Object.Module._extensions..nod
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>kule</title>
