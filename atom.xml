@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-19T16:26:09.000Z</updated>
+  <updated>2017-05-19T16:30:48.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/05/19/Hexo-Github-for-Mac/"/>
     <id>http://yoursite.com/2017/05/19/Hexo-Github-for-Mac/</id>
     <published>2017-05-19T14:07:53.000Z</published>
-    <updated>2017-05-19T16:26:09.000Z</updated>
+    <updated>2017-05-19T16:30:48.000Z</updated>
     
     <content type="html"><![CDATA[<p>/时间2017-05-19/<br>搭建这个博客向他人学习了好多也踩了好多坑 在这分享给大家<br>博主是才换成Mac系统，在此也多针对Mac系统小白<br>衷心提醒搭建的过程全程开着梯子 都是泪</p>
 <h1 id="搭建步骤："><a href="#搭建步骤：" class="headerlink" title="搭建步骤："></a>搭建步骤：</h1><pre><code>1&gt;GitHub创建个人仓库
@@ -31,16 +31,27 @@
 6&gt;获得个人网站域名
 7&gt;绑定域名
 8&gt;更换主题
+
 &lt;!-- more --&gt;
 </code></pre><h1 id="GitHub创建个人仓库"><a href="#GitHub创建个人仓库" class="headerlink" title="GitHub创建个人仓库"></a>GitHub创建个人仓库</h1><p>点击GitHub中的New repository创建新仓库，仓库名应该为：用户名.github.io 这个用户名使用你的GitHub帐号名称代替，这是固定写法，否则以后会报错，比如我的仓库名为：Agee-G.github.io</p>
-<h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><p>我们博客在本地搭建好了，需要使用Git同步到GitHub上。如果想要更多了解Git，可以看看廖雪峰老师的Git教程: <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">Git教程</a> 在这建议大家安装Git2.0以下的版本 我在官网安装的2.13.0版本出现过错误，后来搜索是版本太高的迷之错误233 在win 下鼠标右击打开Git Bash而在Mac中之间在shell就行。<br>设置user.name和user.email配置信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">git config --global user.name <span class="string">"你的GitHub用户名"</span></div><div class="line"></div><div class="line">git config --global user.email <span class="string">"你的GitHub注册邮箱"</span></div><div class="line">``` </div><div class="line">生成ssh密钥文件：</div><div class="line">``` bash</div><div class="line">ssh-keygen -t rsa -C <span class="string">"你的GitHub注册邮箱"</span></div><div class="line">``` </div><div class="line">如果出现钥匙状的图片输入开机密码 它中不会显示你输了多少位数，但还是有键入的。然后回车回车回车</div><div class="line">在shell中输入open ~/.ssh找到生成的.ssh的文件夹中的id_rsa.pub密钥，将内容全部复</div><div class="line">制GitHub_Edit profile_SSH and GPS keys 页面，新建new SSH Key,Title是标题可</div><div class="line">以随便输。然后在shell输入</div><div class="line">``` bash</div><div class="line">ssh -v git@github.com 检查是否成功</div><div class="line">``` </div><div class="line"><span class="comment"># 安装Node.js</span></div><div class="line">下载地址：[Download | Node.js](https://nodejs.org/en/download/)  然后在shell中输入node -v检查是否成功 检测npm是否安装成功，在命令行中输入npm -v检</div><div class="line">查是否按装成功（npm打包在node.js中直接下载下来了）。</div><div class="line"><span class="comment"># 安装Hexo</span></div><div class="line">在shell中输入</div><div class="line">``` bash</div><div class="line"> sudo npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
-<p>耐心等待后 初始化我们的博客，输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init blog</div></pre></td></tr></table></figure></p>
+<h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><p>我们博客在本地搭建好了，需要使用Git同步到GitHub上。如果想要更多了解Git，可以看看廖雪峰老师的Git教程: <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">Git教程</a> 在这建议大家安装Git2.0以下的版本 我在官网安装的2.13.0版本出现过错误，后来搜索是版本太高的迷之错误233 在win 下鼠标右击打开Git Bash而在Mac中之间在shell就行。<br>设置user.name和user.email配置信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git config --global user.name <span class="string">"你的GitHub用户名"</span></div><div class="line"></div><div class="line">git config --global user.email <span class="string">"你的GitHub注册邮箱"</span></div></pre></td></tr></table></figure></p>
+<p>生成ssh密钥文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"你的GitHub注册邮箱"</span></div><div class="line">``` </div><div class="line"></div><div class="line">如果出现钥匙状的图片输入开机密码 它中不会显示你输了多少位数，但还是有键入的。然后回车回车回车</div><div class="line">在shell中输入open ~/.ssh找到生成的.ssh的文件夹中的id_rsa.pub密钥，将内容全部复</div><div class="line">制GitHub_Edit profile_SSH and GPS keys 页面，新建new SSH Key,Title是标题可</div><div class="line">以随便输。然后在shell输入</div><div class="line"></div><div class="line">``` bash</div><div class="line">ssh -v git@github.com 检查是否成功</div></pre></td></tr></table></figure>
+<h1 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h1><p>下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="external">Download | Node.js</a>  然后在shell中输入node -v检查是否成功 检测npm是否安装成功，在命令行中输入npm -v检<br>查是否按装成功（npm打包在node.js中直接下载下来了）。</p>
+<h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><p>在shell中输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<p>耐心等待后 初始化我们的博客，输入 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init blog</div></pre></td></tr></table></figure>
 <p>注意！init 后面的blog是要建立的文件名 你可以自己随意命名</p>
-<p>检测我们网站的雏形，分别输入以下三个命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo new Hello_myB<span class="built_in">log</span></div><div class="line"></div><div class="line">hexo g</div><div class="line"></div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>检测我们网站的雏形，分别输入以下三个命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo new Hello_myB<span class="built_in">log</span></div><div class="line"></div><div class="line">hexo g</div><div class="line"></div><div class="line">hexo s</div></pre></td></tr></table></figure>
 <p>若shell出现INFO  Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>. Press Ctrl+C to stop.<br>就可以在浏览器中输入：localhost:4000 打开看到我们的第一篇博客</p>
-<p>#推送网站<br>在Finder中找到blog目录下的_config.yml翻到最后修改为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy: </div><div class="line"> <span class="built_in">type</span>: git</div><div class="line"> repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git</div><div class="line"> branch: master</div></pre></td></tr></table></figure></p>
-<p>切记冒号： 后面要空一格！command + s 保存<br>安装Git部署插件，在shell输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
-<p>接下来分别输入三个命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line"></div><div class="line">hexo g</div><div class="line"></div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>#推送网站<br>在Finder中找到blog目录下的_config.yml翻到最后修改为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy: </div><div class="line"> <span class="built_in">type</span>: git</div><div class="line"> repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git</div><div class="line"> branch: master</div></pre></td></tr></table></figure>
+<p>切记冒号： 后面要空一格！command + s 保存<br>安装Git部署插件，在shell输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<p>接下来分别输入三个命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line"></div><div class="line">hexo g</div><div class="line"></div><div class="line">hexo d</div></pre></td></tr></table></figure>
 <p>这时如如果都OK ，打开浏览器，在地址栏输入你的放置个人网站的仓库路径，即 <a href="http://xxxx.github.io" target="_blank" rel="external">http://xxxx.github.io</a> 你会发现和刚才localhost:4000一个效果</p>
 <p>#绑定域名</p>
 ]]></content>
