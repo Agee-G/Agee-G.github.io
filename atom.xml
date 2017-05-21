@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-21T06:48:50.000Z</updated>
+  <updated>2017-05-21T11:06:42.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yoursite.com/2017/05/21/building-gradle-project-info%E5%8D%A1%E4%BD%8F/"/>
     <id>http://yoursite.com/2017/05/21/building-gradle-project-info卡住/</id>
     <published>2017-05-21T06:40:33.000Z</published>
-    <updated>2017-05-21T06:48:50.000Z</updated>
+    <updated>2017-05-21T11:06:42.000Z</updated>
     
-    <content type="html"><![CDATA[<p>博主在给新买的Mac安装Android studio后 新建project最后一步会出现building XXXXXX gradle project info卡住 只能强制退出 AS版本是2.3.2 FOR MAC<br><a id="more"></a><br>产生这种问题原因是gradle版本不拼配 google的解决方案是修改版本号和原来的项目一样，可博主电脑是新买的 原来的AS也是3.1版本的，只能出下策：翻墙搭梯子 要注意的是：SS要开全局服务 很快就好了 美滋滋开始敲代码</p>
+    <content type="html"><![CDATA[<p>博主在给新买的Mac安装Android studio后 新建project最后一步会出现building XXXXXX gradle project info卡住 只能强制退出 AS版本是2.3.2 FOR MAC<br><a id="more"></a><br>产生这种问题原因是gradle版本不拼配 google的解决方案是修改grandle版本号和原来的项目一样，可博主电脑是新买的 原来的AS也是3.1版本的，只能出下策：翻墙搭梯子 要注意的是：SS要开全局服务 很快就好了 美滋滋开始敲代码</p>
 ]]></content>
     
     <summary type="html">
