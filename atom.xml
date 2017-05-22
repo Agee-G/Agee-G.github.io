@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-22T06:48:34.000Z</updated>
+  <updated>2017-05-22T06:52:06.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://yoursite.com/2017/05/22/git%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%A0%81%E5%88%B0github-%E5%92%8C%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     <id>http://yoursite.com/2017/05/22/git上传本地代码到github-和一些常见问题/</id>
     <published>2017-05-21T18:42:48.000Z</published>
-    <updated>2017-05-22T06:48:34.000Z</updated>
+    <updated>2017-05-22T06:52:06.000Z</updated>
     
     <content type="html"><![CDATA[<p>第一步：建立git仓库<br> cd到你的本地项目根目录下，执行：</p>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"> git init</div><div class="line"></div><div class="line"> ``` </div><div class="line">第二步：将项目的所有文件添加到仓库内，执行：</div><div class="line">``` shell</div><div class="line"> git add .</div></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"> git init</div><div class="line"></div><div class="line"> ``` </div><div class="line">第二步：将项目的所有文件添加到仓库内，执行：</div><div class="line"></div><div class="line"> ``` shell</div><div class="line"> git add .</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <h1 id="注意add后面一个空格再有”-”"><a href="#注意add后面一个空格再有”-”" class="headerlink" title="注意add后面一个空格再有”.”"></a>注意add后面一个空格再有”.”</h1><p> 第三步:将add的文件commit到仓库，执行：</p>
 <pre><code class="shell">git commit -m "注释语句"
@@ -64,7 +64,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
     <summary type="html">
     
       &lt;p&gt;第一步：建立git仓库&lt;br&gt; cd到你的本地项目根目录下，执行：&lt;/p&gt;
- &lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt; git init&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; ``` &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;第二步：将项目的所有文件添加到仓库内，执行：&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;``` shell&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; git add .&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ &lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt; git init&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; ``` &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;第二步：将项目的所有文件添加到仓库内，执行：&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; ``` shell&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; git add .&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
