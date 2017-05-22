@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> git上传本地代码到github 和一些常见问题 · Agee</title><meta name="description" content="git上传本地代码到github 和一些常见问题 - G__Agee"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="Agee"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/3295202974" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/Agee-G" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">git上传本地代码到github 和一些常见问题</h1><div class="post-info">May 22, 2017</div><div class="post-content"><p>第一步：建立git仓库<br> cd到你的本地项目根目录下，执行：</p>
+<pre><code class="shell">git init
+</code></pre>
+<p>第二步：将项目的所有文件添加到仓库内，执行：</p>
+<pre><code class="shell">git add .
+</code></pre>
+<h1 id="注意add后面一个空格再有”-”"><a href="#注意add后面一个空格再有”-”" class="headerlink" title="注意add后面一个空格再有”.”"></a>注意add后面一个空格再有”.”</h1><a id="more"></a>
+<p> 第三步:将add的文件commit到仓库，执行：</p>
+<pre><code class="shell">git commit -m "注释语句"
+</code></pre>
+<p>第四步：将本地的仓库关联到github上，执行：</p>
+<pre><code class="shell">git remote add origin https://github.com/xxxxxx/xxxxx
+</code></pre>
+<p> “xxxx”换成你自己的仓库URL</p>
+<p> 第五步：上传github之前，要先pull一下，执行如下命令：</p>
+<pre><code class="shell">git pull origin master
+</code></pre>
+<h1 id="注意-要是出现如下问题："><a href="#注意-要是出现如下问题：" class="headerlink" title="注意 要是出现如下问题："></a>注意 要是出现如下问题：</h1><pre><code class="shell">fatal: refusing to merge unrelated histories
+</code></pre>
+<p> 解决方案是：</p>
+<pre><code class="shell">git pull origin master --allow-unrelated-histories
+</code></pre>
+<p> 第六步：上传代码到github远程仓库：</p>
+<pre><code class="shell">git push -u origin master
+</code></pre>
+<h1 id="注意-要是出现如下问题：-1"><a href="#注意-要是出现如下问题：-1" class="headerlink" title="注意 要是出现如下问题："></a>注意 要是出现如下问题：</h1><pre><code class="shell">Administrator@PC-20150110FGWU /K/cocos2d/yc (master)
+<span class="meta">$</span><span class="bash"> git push -u origin master</span>
+To git@github.com:yangchao0718/cocos2d.git
+! [rejected] master -&gt; master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:yangchao0718/cocos2d.git
+hint: Updates were rejected because the tip of your current branch is behin
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+</code></pre>
+<h1 id="出现错误的主要原因是github中的README-md文件不在本地代码目录中"><a href="#出现错误的主要原因是github中的README-md文件不在本地代码目录中" class="headerlink" title="出现错误的主要原因是github中的README.md文件不在本地代码目录中"></a>出现错误的主要原因是github中的README.md文件不在本地代码目录中</h1><p>可执行语句</p>
+<pre><code class="shell">git pull --rebase origin master
+</code></pre>
+<p> 在执行语句:</p>
+<pre><code class="shell">git push -u origin master
+</code></pre>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/05/21/building-gradle-project-info卡住/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'seansun';
+var disqus_identifier = '2017/05/22/git上传本地代码到github-和一些常见问题/';
+var disqus_title = 'git上传本地代码到github 和一些常见问题';
+var disqus_url = 'http://yoursite.com/2017/05/22/git上传本地代码到github-和一些常见问题/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//seansun.disqus.com/count.js" async></script><div class="copyright"><p>© 2015 - 2017 <a href="http://yoursite.com">G__Agee</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
